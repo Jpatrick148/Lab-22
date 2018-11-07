@@ -1,8 +1,17 @@
-﻿<h2>Registration Page</h2>
+﻿
+
+<h2>Registration Page</h2>
 
 <form method="get" action="Result">
-	<p>Name </p> <input type="text" name="firstname" value="" /><br/>
-	<p> Email</p> <input type="email" name="email" value="" /><br/>
-	<p> Password</p> <input type="password" name="password" value="" /><br/>
-	<input type="submit" />
+    <p>Name </p> <input type="text" name="firstname" value="" /><br/>
+    <p> Email</p> <input type="email" name="email" value="" /><br/>
+    <p> Password</p> <input type="password" name="password" value="" required/><br/>
+    <p>Confirm Password </p> <input type="password" name="confirm" required/><br/>
+    <p> Age </p> <input type="number" name="age" /><br/>
+
+    <p>Subscription</p> 
+    <p> 1 Month $199.99</p><input type="radio" name="subscription" value="199.99"/>
+    <p> 3 Months $299.99</p><input type="radio" name="subscription" value="299.99"/><br/>
+
+    <input type="submit" />
 </form>

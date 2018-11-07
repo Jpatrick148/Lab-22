@@ -34,10 +34,15 @@ namespace Lab21.Controllers
             return View();
         }
 
+        
+
         public ActionResult Result(Registration r)
         {
-            
-            return View(r);
+            if (r.password == r.confirm)
+            {
+                return View(r);
+            }
+            else return Register();
         }
     }
 }
