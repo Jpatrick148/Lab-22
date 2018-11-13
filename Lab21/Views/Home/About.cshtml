@@ -1,7 +1,17 @@
-﻿@{
-    ViewBag.Title = "About";
+﻿
+
+@{
+    ViewBag.Title = "Items";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+@foreach (var i in ViewBag.ListItems)
+{
+    @i.Name<br/>
 
-<p>Use this area to provide additional information.</p>
+    @i.Description <br/>
+
+    @i.Price<br/>
+
+    @i.Quantity
+}

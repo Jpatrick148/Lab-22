@@ -34,6 +34,8 @@ namespace Lab21.Controllers
             return View();
         }
 
+      
+
         
 
         public ActionResult Result(Registration r)
